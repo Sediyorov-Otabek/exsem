@@ -1,0 +1,119 @@
+.contact {
+    background: #014E56;
+    padding-bottom: 120px;
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__box {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+
+        b {
+            font-size: 64px;
+            color: #ffffff;
+            font-weight: 600;
+            cursor: pointer;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__desc {
+        font-size: 32px;
+        color: #F67E7E;
+        margin-bottom: 32px;
+    }
+
+    &__foto {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        gap: 20px;
+
+        p {
+            font-size: 18px;
+            color: #ffffff;
+        }
+    }
+
+    &__inp {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        input {
+            padding-left: 8px;
+            padding-bottom: 20px;
+            padding-top: 5px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            outline: none;
+            background: transparent;
+            color: #ffffff96;
+        }
+
+        button {
+            padding: 9px 32px 11px 32px;
+            border: 2px solid #ffffff;
+            border-radius: 110px;
+            cursor: pointer;
+            width: 123px;
+            height: 48px;
+
+            &:hover {
+                background: #012F34;
+                color: #ffffff;
+            }
+        }
+
+    }
+}
+
+@media (max-width:990px) {
+    .contact {
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &__box {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &__inp{
+            input{
+                width: 400px;
+            }
+        }
+    }
+
+}
+
+@media (max-width:450px) {
+    .contact {
+        &__inp {
+            display: flex;
+            flex-direction: column;
+
+            input {
+                width: 325px;
+            }
+        }
+
+    }
+
+}
